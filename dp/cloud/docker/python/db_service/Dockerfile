@@ -1,5 +1,5 @@
 ARG ENV=standard
-FROM python:3.9.2-slim-buster as builder
+FROM python:3.10.9-slim-buster as builder
 
 COPY dp/cloud/python/magma/db_service/requirements.txt /dp/cloud/python/magma/db_service/requirements.txt
 WORKDIR /dp/cloud/python/magma/db_service/migrations
