@@ -1,4 +1,4 @@
-FROM node:16.14-alpine as builder
+FROM node:16.19.0-alpine as builder
 
 WORKDIR /usr/src/
 
@@ -11,7 +11,7 @@ RUN yarn install --mutex network --frozen-lockfile && yarn cache clean
 # Build our static files
 COPY . .
 
-FROM node:16.14-alpine
+FROM node:16.19.0-alpine
 
 # Install required binaries
 RUN apk add ca-certificates curl bash
