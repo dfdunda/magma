@@ -1,7 +1,7 @@
 ################################################################
 # Builder Image (can also be used as developer's image)
 ################################################################
-FROM ubuntu:bionic as magma-mme-base
+FROM ubuntu:18.04 as magma-mme-base
 
 ENV FEATURES=mme_oai
 ENV MAGMA_ROOT=/magma
@@ -308,7 +308,7 @@ RUN openssl rand -out /root/.rnd 128
 ################################################################
 # Target Image
 ################################################################
-FROM ubuntu:bionic as magma-mme
+FROM ubuntu:18.04 as magma-mme
 ENV MAGMA_ROOT=/magma
 ENV C_BUILD=/build/c
 
