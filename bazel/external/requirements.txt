@@ -118,7 +118,7 @@ bravado-core==5.17.1 \
     --hash=sha256:0da9c6f3814734622a55db3f62d08db6e188b25f3ebd087de370c91afb66a7f4 \
     --hash=sha256:e231567cdc471337d23dfc950c45c5914ade8a78cde7ccf2ebb9433fcda29f40
     # via -r requirements.in
-certifi==2022.9.24 \
+certifi==2023.7.22 \
     --hash=sha256:0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14 \
     --hash=sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382
     # via
