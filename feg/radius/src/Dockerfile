@@ -15,7 +15,7 @@ RUN true # workaround for moby issue #37965
 COPY feg/radius/lib/go/ $MAGMA_ROOT/feg/radius/lib/go/
 RUN ./run.sh build
 
-FROM alpine
+FROM alpine:3.18.3
 RUN apk add gettext musl
 
 COPY feg/radius/src/config/samples/*template /app/
