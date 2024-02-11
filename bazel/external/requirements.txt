@@ -299,7 +299,7 @@ deprecated==1.2.13 \
     # via
     #   -r requirements.in
     #   redis
-dnspython==1.16.0 \
+dnspython==2.6.0rc1 \
     --hash=sha256:36c5e8e38d4369a08b6780b7f27d790a292b2b08eea01607865bf0936c558e01 \
     --hash=sha256:f69c21288a962f4da86e56c4905b49d11aba7938d3d740e80d9e366ee4f1632d
     # via eventlet
