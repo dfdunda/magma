@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Builder image for Magma proto files
 # -----------------------------------------------------------------------------
-FROM ubuntu:focal AS builder
+FROM ubuntu:20.04 AS builder
 
 # workaround to avoid interactive tzdata configurtaion
 ARG DEBIAN_FRONTEND=noninteractive
@@ -40,7 +40,7 @@ RUN make -C $MAGMA_ROOT/orc8r/gateway/python protos
 # -----------------------------------------------------------------------------
 # Dev/Production image
 # -----------------------------------------------------------------------------
-FROM ubuntu:focal AS lte_gateway_python
+FROM ubuntu:20.04 AS lte_gateway_python
 
 # Add the magma apt repo
 RUN apt-get update && \
