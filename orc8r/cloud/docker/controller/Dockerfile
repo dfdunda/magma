@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 ARG PLATFORM=linux/amd64
 
-FROM --platform=$PLATFORM ubuntu:focal as base
+FROM --platform=$PLATFORM ubuntu:20.04 as base
 
 ENV GO111MODULE on
 ENV GOPATH ${USER}/go
@@ -88,7 +88,7 @@ RUN . /etc/profile.d/env.sh && make build
 # ------------------------------------------------------------------------------
 # Production
 # ------------------------------------------------------------------------------
-FROM ubuntu:focal
+FROM ubuntu:20.04
 
 # Apt runtime deps
 RUN apt-get update && apt-get install -y \
