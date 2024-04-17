@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Development image for test, precommit, etc.
 # -----------------------------------------------------------------------------
-ARG baseImage="ubuntu:focal"
+ARG baseImage=ubuntu:20.04
 FROM ${baseImage} as base
 
 # Add the magma apt repo
