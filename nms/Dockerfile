@@ -1,4 +1,4 @@
-FROM node:16.14-alpine as builder
+FROM node:16.20.1-alpine as builder
 
 RUN apk add python3 g++ make libx11 glew-dev libxi-dev ca-certificates
 
@@ -15,7 +15,7 @@ RUN yarn install --mutex network --frozen-lockfile --network-timeout 90000 && ya
 COPY . .
 RUN yarn run build
 
-FROM node:16.14-alpine
+FROM node:16.20.1-alpine
 
 # Install required binaries
 RUN apk add ca-certificates curl bash
