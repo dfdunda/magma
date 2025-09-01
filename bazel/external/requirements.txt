@@ -315,7 +315,7 @@ envoy==0.0.3 \
     --hash=sha256:22b02009cfda2cf2cdb94a75a15ac3fd910aea8685c53e8e03715c7e9d8e8bde \
     --hash=sha256:789d274f8bc00401848678c0ee18199c1a57901749ed6b1a03a3ea53ec72ceef
     # via -r requirements.in
-eventlet==0.30.2 \
+eventlet==0.40.3 \
     --hash=sha256:1811b122d9a45eb5bafba092d36911bca825f835cb648a862bbf984030acff9d \
     --hash=sha256:89cc6dbfef47c4629cefead5fde21c5f2b33464d57f7df5fc5148f8b4de3fbb5
     # via -r requirements.in
@@ -562,7 +562,7 @@ grpcio-tools==1.48.2 \
     --hash=sha256:f75973a42c710999acd419968bc79f00327e03e855bbe82c6529e003e49af660 \
     --hash=sha256:f766050e491d0b3203b6b85638015f543816a2eb7d089fc04e86e00f6de0e31d
     # via -r requirements.in
-h2==3.2.0 \
+h2==4.3.0 \
     --hash=sha256:61e0f6601fa709f35cdb730863b4e5ec7ad449792add80d1410d4174ed139af5 \
     --hash=sha256:875f41ebd6f2c44781259005b157faed1a5031df3ae5aa7bcb4628a6c0782f14
     # via -r requirements.in
