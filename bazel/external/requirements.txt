@@ -1361,7 +1361,7 @@ routes==2.5.1 \
     --hash=sha256:b6346459a15f0cbab01a45a90c3d25caf980d4733d628b4cc1952b865125d053 \
     --hash=sha256:fab5a042a3a87778eb271d053ca2723cadf43c95b471532a191a48539cb606ea
     # via -r requirements.in
-scapy==2.4.5 \
+scapy==2.7.0rc1 \
     --hash=sha256:bc707e3604784496b6665a9e5b2a69c36cc9fb032af4864b29051531b24c8593
     # via -r requirements.in
 sentry-sdk==1.8.0 \
